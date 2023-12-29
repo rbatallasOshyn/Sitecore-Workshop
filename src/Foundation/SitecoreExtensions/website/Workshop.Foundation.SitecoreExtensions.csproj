@@ -61,7 +61,7 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\" />
+    <Folder Include="App_Config\Include\Foundation\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>

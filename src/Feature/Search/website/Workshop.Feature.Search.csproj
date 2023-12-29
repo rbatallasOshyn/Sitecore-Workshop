@@ -51,7 +51,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\" />
+    <Folder Include="App_Config\Include\Feature\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>

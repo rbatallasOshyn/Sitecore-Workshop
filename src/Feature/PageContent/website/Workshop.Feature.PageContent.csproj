@@ -54,7 +54,7 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="App_Config\Include\Feature\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
