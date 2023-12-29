@@ -1,4 +1,5 @@
-﻿<!doctype html>
+﻿@using Sitecore.Mvc.Analytics.Extensions
+<!doctype html>
 <html lang="en">
 <head>
     <title>MEDIO clinic Beford, NH</title>
@@ -22,28 +23,7 @@
     <section id="main">
         <div class="g-w">
             <div class="g-p">
-                <div class="g-g">
-                    <div class="g-u-1 g-u-lg-1-2">
-                        <div class="box form">
-                            <h2>Contact us via email</h2>
-                            <div id="p_lt_ctl01_pP_p_lt_ctl00_BizForm_viewBiz">
-                                <div class="form">
-                                    <label>Your name:</label>
-                                    <input type="text" class="form-control" />
-                                    <label>Email:</label>
-                                    <input type="text" class="form-control" />
-                                    <label>Message:</label>
-                                    <textarea rows="2" cols="20" class="form-control"></textarea>
-                                </div>
-                                <input type="submit" value="Submit" class="FormButton btn btn-primary" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="g-u-1 g-u-lg-1-2">
-                        <h2>MEDIO clinic</h2>
-                        MEDIO clinic<br />7A Kentico Street<br />Bedford, NH 03110, USA<br /><a href="tel:+1-603-754-3010">(603) 754-3010</a>
-                    </div>
-                </div>
+                @Html.Sitecore().Placeholder("main")
             </div>
         </div>
     </section>
