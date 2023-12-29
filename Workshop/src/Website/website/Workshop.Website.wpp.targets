@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <!-- 
+    Exclude Sitecore assemblies from publish to reduce data transfer and file size. 
+    https://github.com/richardszalay/helix-publishing-pipeline#excluding-sitecore-assemblies
+    -->
+        <SitecoreAssembliesToExclude Include="@(SitecoreAssemblies)" />
+
+        <!-- no longer required with Sitecore.Assmblies.Platform NuGet package
+  <SitecoreAssemblyListsToExclude Include="AssemblyLists\*.csv" /> -->
+
+    </ItemGroup>
+
+    <PropertyGroup>
+        <!-- 
+    Set to false if you don't want it to publish after each build
+    https://github.com/richardszalay/helix-publishing-pipeline#publishing-on-build
+    -->
+        <EnableAutoPublish>false</EnableAutoPublish>
+
+        <AutoPublish Condition="'$(AutoPublish)' == '' and '$(EnableAutoPublish)' == 'true' and '$(Configuration)' == 'Debug' and '$(BuildingInsideVisualStudio)' == 'true' and '$(PublishProfile)' != ''">true</AutoPublish>
+
+        <AutoPublishDependsOn Condition="'$(AutoPublish)' == 'true'">
+            $(AutoPublishDependsOn);
+            WebPublish
+        </AutoPublishDependsOn>
+    </PropertyGroup>
+
+    <Target Name="AutoPublish" AfterTargets="Build" DependsOnTargets="$(AutoPublishDependsOn)">
+    </Target>
+
+    <UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(MSBuildToolsVersion)\Web\Microsoft.Web.Publishing.Tasks.dll" />
+    <Target Name="ApplyTransform">
+        <ItemGroup>
+            <Transform Include="$(TransformFile)" />
+
+            <ConfigsToTransform Include="$(FileToTransform)" Condition="Exists(@(Transform))">
+                <TransformPath>%(Transform.Identity)</TransformPath>
+            </ConfigsToTransform>
+        </ItemGroup>
+        <Message Text="@(ConfigsToTransform)"></Message>
+        <Message Text="@(Transform)"></Message>
+
+        <TransformXml Source="$(WebConfigToTransform)\%(ConfigsToTransform.Identity)"
+                      Transform="%(ConfigsToTransform.TransformPath)"
+                      Destination="$(WebConfigToTransform)\%(ConfigsToTransform.Identity)"
+                      Condition="Exists(@(Transform))"/>
+    </Target>
+
+</Project>

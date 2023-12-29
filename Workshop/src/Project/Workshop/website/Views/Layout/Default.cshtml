@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>MEDIO clinic Beford, NH</title>
+    <link rel="shortcut icon" type="image/ico" href="./favicon.ico" />
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="referrer" content="always">
+    <link href="~/css/Styles.css" rel="stylesheet" type="text/css" media="all" />
+    @Html.Sitecore().VisitorIdentification()
+</head>
+<body>
+
+    @Html.Sitecore().Placeholder("banner")
+
+    @Html.Sitecore().Placeholder("header")
+
+    <section id="main">
+        <div class="g-w">
+            <div class="g-p">
+                <div class="g-g">
+                    <div class="g-u-1 g-u-lg-1-2">
+                        <div class="box form">
+                            <h2>Contact us via email</h2>
+                            <div id="p_lt_ctl01_pP_p_lt_ctl00_BizForm_viewBiz">
+                                <div class="form">
+                                    <label>Your name:</label>
+                                    <input type="text" class="form-control" />
+                                    <label>Email:</label>
+                                    <input type="text" class="form-control" />
+                                    <label>Message:</label>
+                                    <textarea rows="2" cols="20" class="form-control"></textarea>
+                                </div>
+                                <input type="submit" value="Submit" class="FormButton btn btn-primary" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-u-1 g-u-lg-1-2">
+                        <h2>MEDIO clinic</h2>
+                        MEDIO clinic<br />7A Kentico Street<br />Bedford, NH 03110, USA<br /><a href="tel:+1-603-754-3010">(603) 754-3010</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @Html.Sitecore().Placeholder("footer")
+
+    <script src="~/scripts/app.js"></script>
+</body>
+</html>
