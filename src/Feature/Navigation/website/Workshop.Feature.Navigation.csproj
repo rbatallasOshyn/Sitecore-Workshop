@@ -55,6 +55,7 @@
     <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <Content Include="Views\Navigation\Menu.cshtml" />
     <Content Include="App_Config\Include\Feature\Workshop.Feature.Navigation.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Navigation.Serialization.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />

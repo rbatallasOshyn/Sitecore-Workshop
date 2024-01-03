@@ -1,0 +1,28 @@
+﻿---
+ID: "feb45060-a9c5-4be5-bf2f-2b423dc8fc90"
+Parent: "fe0607ce-0cb9-46b1-a763-33470818c486"
+Template: "04809168-fb39-40b0-a576-0aae143ee4fa"
+Path: /sitecore/content/Data Sources/Header/Header Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240103T024431Z
+    - ID: "39e49dcd-783d-4f4c-87be-1489697bb859"
+      Hint: CTA
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{0E8E20EF-F7B2-4953-8BB2-4248B31D1D50}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "99110813-6ada-446f-8afe-060197a0db44"
+      Hint: Menu Button Text
+      Value: Menu
+    - ID: "cad7feed-7428-4bdd-a49c-57a0d040256f"
+      Hint: CTA Text
+      Value: SUG LATAM

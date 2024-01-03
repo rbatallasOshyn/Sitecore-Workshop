@@ -42,6 +42,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\z.Foundation.Overrides\Foundation.Serialization.Settings.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.Serialization.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />
@@ -54,22 +56,14 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.Roles.config.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.Users.config.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.NewItemsOnly.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config.example" />
     <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <None Include="App_Config\Include\Unicorn\Unicorn.DataProvider.10.1.config" />
-    <None Include="App_Config\Include\Unicorn\Unicorn.DataProvider.config.disabled" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Dilithium.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.PowerShell.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.DataProvider.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.UI.DeployedContentEditorWarnings.config.disabled" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config.disabled" />
+    <None Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Users.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Users.DataProvider.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
@@ -98,9 +92,7 @@
       <Version>4.1.6</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Config\Include\Foundation\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

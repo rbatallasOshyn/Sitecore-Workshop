@@ -1,0 +1,50 @@
+﻿---
+ID: "bf942a49-60d8-415f-b8d2-483603099d7d"
+Parent: "b6398c31-b952-45b8-a0fd-6ef73ea86218"
+Template: "b6398c31-b952-45b8-a0fd-6ef73ea86218"
+Path: /sitecore/templates/Project/Workshop/Page Types/Site Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{F87B150E-D0B0-4F9D-BE86-473A57D07E23}">
+        <r
+          ds="{FEB45060-A9C5-4BE5-BF2F-2B423DC8FC90}"
+          id="{DA90AEF9-E5A1-4E56-8C98-2BD96997C6DD}"
+          par=""
+          ph="header"
+          uid="{1A7972B6-0E10-4F68-B57C-5CCB4260676E}"
+          ccb="Clear on publish" />
+        <r
+          id="{59034D87-DC57-44AE-B188-8F5987ABED08}"
+          ph="navigation"
+          uid="{77646EAF-6CC9-4859-BD4A-74F8FBC33B46}" />
+        <r
+          ds="{35ECC186-62E7-4BE1-8023-7DC6892A8724}"
+          id="{01ADFBCE-7C10-455C-BD30-5CA066074169}"
+          par=""
+          ph="footer"
+          uid="{C1EFFD4B-751A-41CB-9543-84B63C6901FD}"
+          ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240101T220945Z
+    - ID: "2aa86b7b-4f30-41dc-b7d3-405ee4303ea8"
+      Hint: Title
+      Value: $name
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,35 @@
+﻿---
+ID: "6b0481de-745c-4779-9318-53739a91a4e4"
+Parent: "9525aa7c-434f-4005-bb3e-aa4cfc96d051"
+Template: "6c76d0ec-955d-46f1-a59d-1642c2e69f60"
+Path: /sitecore/content/Data Sources/Hero Banner/Hero Banner Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0bc30ee8-fcde-4225-93fe-5c9e54eabff4"
+      Hint: Hero Title
+      Value: "Welcome!"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240103T203502Z
+    - ID: "5b1b39b1-3a91-44ef-8cb0-a2efc72027db"
+      Hint: CTA
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{21DD028C-06A9-4ADC-AC54-4D04297E995E}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "63a64dd0-140f-4034-b2d1-5dc52e6e89ea"
+      Hint: CTA Text
+      Value: Our doctors and opening hours
+    - ID: "a0f6b77e-0db7-4c33-a9fd-957296a6cd15"
+      Hint: Image
+      Value: |
+        <image mediaid="{321818F1-F69A-4A74-84FF-B10EA44BFC3D}" />
+    - ID: "fb9356f0-929b-48e4-920c-b49c3450ebed"
+      Hint: Description
+      Value: The goal of our clinic is to provide the best medical care. For comprehensive health at all times, it is also necessary to maintain a healthy lifestyle.

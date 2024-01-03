@@ -52,12 +52,12 @@
     <Content Include="Views\Header\Header.cshtml" />
     <Content Include="Views\Footer\Footer.cshtml" />
     <Content Include="Views\Sublayouts\TwoColumns.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature.PageContent.Serialization.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\Include\Feature\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>

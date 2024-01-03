@@ -50,6 +50,7 @@
   <ItemGroup>
     <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <Content Include="Views\Hero\HeroBanner.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature.Hero.Serialization.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />
@@ -60,9 +61,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Config\Include\Feature\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Views\Web.config" />
   </ItemGroup>

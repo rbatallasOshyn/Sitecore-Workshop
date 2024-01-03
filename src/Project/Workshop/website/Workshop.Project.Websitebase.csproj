@@ -51,13 +51,13 @@
     <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <Content Include="scripts\app.js" />
     <Content Include="Views\Layout\Default.cshtml" />
+    <Content Include="App_Config\Include\Project\Project.Workshop.Serialization.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />
     <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\Include\Project\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
