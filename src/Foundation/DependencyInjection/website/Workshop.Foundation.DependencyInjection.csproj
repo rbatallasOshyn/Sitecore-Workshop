@@ -51,7 +51,9 @@
     <Compile Include="ServiceCollectionExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Foundation\Foundation.DependencyInjection.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.DependencyInjection.config" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

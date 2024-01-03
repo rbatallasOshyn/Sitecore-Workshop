@@ -52,8 +52,11 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <Content Include="Views\Navigation\Menu.cshtml" />
     <Content Include="App_Config\Include\Feature\Workshop.Feature.Navigation.config" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />
     <Content Include="Views\Web.config" />
   </ItemGroup>

@@ -78,10 +78,6 @@
       <Project>{494feff8-dad2-4899-923a-bb1316b8211c}</Project>
       <Name>Workshop.Foundation.DependencyInjection</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Foundation\DependencyInjection\website\Workshop.Foundation.DependencyInjection.csproj">
-      <Project>{494feff8-dad2-4899-923a-bb1316b8211c}</Project>
-      <Name>Workshop.Foundation.DependencyInjection</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

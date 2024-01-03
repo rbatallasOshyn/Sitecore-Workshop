@@ -48,8 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\Styles.css" />
+    <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <Content Include="scripts\app.js" />
     <Content Include="Views\Layout\Default.cshtml" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />
     <Content Include="Views\Web.config" />
   </ItemGroup>

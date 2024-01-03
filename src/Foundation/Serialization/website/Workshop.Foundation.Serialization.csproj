@@ -42,6 +42,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +59,7 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.NewItemsOnly.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config.example" />
+    <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <None Include="App_Config\Include\Unicorn\Unicorn.DataProvider.10.1.config" />
     <None Include="App_Config\Include\Unicorn\Unicorn.DataProvider.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Dilithium.config.example" />

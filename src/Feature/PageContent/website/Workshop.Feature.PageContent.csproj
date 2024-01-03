@@ -48,10 +48,13 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <Content Include="Views\Header\Header.cshtml" />
     <Content Include="Views\Footer\Footer.cshtml" />
     <Content Include="Views\Banner\Banner.cshtml" />
     <Content Include="Views\Sublayouts\TwoColumns.cshtml" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
