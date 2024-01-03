@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BF181EC8-CB07-4F37-8CAC-05AFCFAD5E46}</ProjectGuid>
+    <ProjectGuid>{3C8CC778-BC6E-4978-A81C-BB7046432459}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Workshop.Project.Websitebase</RootNamespace>
-    <AssemblyName>Workshop.Project.Websitebase</AssemblyName>
+    <RootNamespace>Workshop.Feature.Hero</RootNamespace>
+    <AssemblyName>Workshop.Feature.Hero</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -45,20 +45,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\Styles.css" />
     <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
-    <Content Include="scripts\app.js" />
-    <Content Include="Views\Layout\Default.cshtml" />
+    <Content Include="Views\Hero\HeroBanner.cshtml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />
-    <None Include="Views\Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\Include\Project\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="App_Config\Include\Feature\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Sitecore.Kernel">
@@ -76,6 +82,12 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\website\Workshop.Foundation.SitecoreExtensions.csproj">
+      <Project>{155e2c77-e55b-4e79-9796-c8e4e56621b4}</Project>
+      <Name>Workshop.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -92,9 +104,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58869</DevelopmentServerPort>
+          <DevelopmentServerPort>52739</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58869/</IISUrl>
+          <IISUrl>http://localhost:52739/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -51,7 +51,7 @@
     <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Web.config" />
     <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
-    <Content Include="Views\Web.config" />
+    <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Config\Include\Feature\" />

@@ -1613,7 +1613,7 @@ header nav ul li a:focus {
     margin: 1em 0 .25em;
   }
 }
-@media screen and (min-width: 641px) and (max-width: 1280px) {
+/*@media screen and (min-width: 641px) and (max-width: 1280px) {
   #banner {
     background-image: url("../img/banner-mid.jpg");
   }
@@ -1622,7 +1622,7 @@ header nav ul li a:focus {
   #banner {
     background-image: url("../img/banner-full.jpg");
   }
-}
+}*/
 #banner p {
   text-align: left;
   color: #222222;

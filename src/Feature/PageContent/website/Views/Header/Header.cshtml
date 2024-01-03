@@ -9,10 +9,6 @@
         <div class="g-p">
             <div class="g-g">
                 <div class="g-u-1 g-u-lg-2-5">
-                    @*<a href="./index.html" class="logo">
-                        MEDIO clinic
-                    </a>*@
-
                     @Html.Sitecore().BeginField(Templates.Header.Fields.CTAString, Model.Item, new { haschildren = true, @class = "logo" })
 
                         @Html.Sitecore().Field(Templates.Header.Fields.CTATextString)

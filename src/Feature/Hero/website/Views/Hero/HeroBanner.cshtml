@@ -1,0 +1,30 @@
+﻿@using Workshop.Foundation.SitecoreExtensions.Extensions
+@using Workshop.Feature.Hero
+
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{ 
+    var imageField = Model.Item.ImageUrl(Templates.HeroBanner.Fields.Image);
+}
+
+
+<section id="banner" style="background-image: url('@imageField')">
+    <div class="g-w">
+        <div class="g-p">
+            <div class="g-g">
+                <div class="g-u-1 g-u-lg-1-2">
+                    <h1>@Html.Sitecore().Field("Hero Title", Model.Item)</h1>
+                    <p>@Html.Sitecore().Field("Description", Model.Item)</p>
+
+                    @Html.Sitecore().BeginField("CTA",Model.Item,new { haschilden=true, @class= "btn red bold big" })
+
+                        @Html.Sitecore().Field("CTA Text",Model.Item)
+
+                    @Html.Sitecore().EndField()
+                </div>
+                <div class="g-u-1 g-u-lg-1-2">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
