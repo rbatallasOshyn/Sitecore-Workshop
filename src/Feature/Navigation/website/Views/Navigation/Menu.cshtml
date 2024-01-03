@@ -1,9 +1,16 @@
-﻿<div class="g-u-1 g-u-lg-3-5" id="menu">
+﻿
+@using Workshop.Feature.Navigation.Models
+
+@model List<NavigationModel>
+
+
+<div class="g-u-1 g-u-lg-3-5" id="menu">
     <nav>
         <ul>
-            <li><a href="./doctors.html">Doctors</a></li>
-            <li><a href="./medical-centers.html">Medical centers</a></li>
-            <li><a href="./contact-us.html">Contact us</a></li>
+            @foreach (var item in Model)
+            {
+                <li><a href="@item.Url">@item.Text</a></li>
+            }
         </ul>
     </nav>
 </div>

@@ -44,6 +44,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.Project.Websitebas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.Website", "src\Website\website\Workshop.Website.csproj", "{4BE4134B-FA2F-4F64-811F-531B080DD530}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{9B9EDB7A-36BE-461B-939A-33121FB0A1EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.Foundation.DependencyInjection", "src\Foundation\DependencyInjection\website\Workshop.Foundation.DependencyInjection.csproj", "{494FEFF8-DAD2-4899-923A-BB1316B8211C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +82,10 @@ Global
 		{4BE4134B-FA2F-4F64-811F-531B080DD530}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BE4134B-FA2F-4F64-811F-531B080DD530}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BE4134B-FA2F-4F64-811F-531B080DD530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494FEFF8-DAD2-4899-923A-BB1316B8211C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494FEFF8-DAD2-4899-923A-BB1316B8211C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494FEFF8-DAD2-4899-923A-BB1316B8211C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494FEFF8-DAD2-4899-923A-BB1316B8211C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +104,8 @@ Global
 		{8835622D-13FD-438F-B3C9-877314D9A4BB} = {2C46327C-37E3-4A8F-BF12-60399D416F5A}
 		{BF181EC8-CB07-4F37-8CAC-05AFCFAD5E46} = {8CFDA3C6-6801-4A06-AE94-3191D1620044}
 		{4BE4134B-FA2F-4F64-811F-531B080DD530} = {09B5DDB5-71A8-41FF-9733-1F3AAE381398}
+		{9B9EDB7A-36BE-461B-939A-33121FB0A1EA} = {5905A220-4E9F-49B5-B143-812121158D00}
+		{494FEFF8-DAD2-4899-923A-BB1316B8211C} = {9B9EDB7A-36BE-461B-939A-33121FB0A1EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2AB466B9-17A5-44C4-A3E8-EAF83B990F56}
