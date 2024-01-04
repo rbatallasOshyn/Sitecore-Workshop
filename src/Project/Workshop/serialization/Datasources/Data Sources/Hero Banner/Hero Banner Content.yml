@@ -18,7 +18,7 @@ Languages:
     - ID: "5b1b39b1-3a91-44ef-8cb0-a2efc72027db"
       Hint: CTA
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{21DD028C-06A9-4ADC-AC54-4D04297E995E}" />
+        <link linktype="internal" querystring="" target="" id="{21DD028C-06A9-4ADC-AC54-4D04297E995E}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

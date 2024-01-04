@@ -16,7 +16,7 @@
                     <h1>@Html.Sitecore().Field("Hero Title", Model.Item)</h1>
                     <p>@Html.Sitecore().Field("Description", Model.Item)</p>
 
-                    @Html.Sitecore().BeginField("CTA",Model.Item,new { haschilden=true, @class= "btn red bold big" })
+                    @Html.Sitecore().BeginField("CTA",Model.Item,new { haschildren=true, @class= "btn red bold big" })
 
                         @Html.Sitecore().Field("CTA Text",Model.Item)
 

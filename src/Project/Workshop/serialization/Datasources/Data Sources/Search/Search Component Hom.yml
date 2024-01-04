@@ -1,0 +1,24 @@
+﻿---
+ID: "53ca48d4-008a-4c1b-9f0f-0c59846665e4"
+Parent: "1011de09-4cd8-41fe-ac8f-83356a6fa78a"
+Template: "7158a68f-172b-411b-adb8-6724a6a8e2f2"
+Path: /sitecore/content/Data Sources/Search/Search Component Home
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1dd1ced7-c1d2-4f29-9e82-0124703b06d1"
+      Hint: Label
+      Value: Doctor's name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240104T033242Z
+    - ID: "49818754-0f5e-4844-8e22-3934fb143e82"
+      Hint: Title
+      Value: Find a doctor
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

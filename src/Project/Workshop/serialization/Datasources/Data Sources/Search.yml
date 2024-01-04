@@ -1,0 +1,14 @@
+﻿---
+ID: "1011de09-4cd8-41fe-ac8f-83356a6fa78a"
+Parent: "5cb1ac57-70f0-4b07-b937-514fc1382574"
+Template: "13d7a518-27e5-4b48-bef5-6ea410ed4702"
+Path: /sitecore/content/Data Sources/Search
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240104T031351Z

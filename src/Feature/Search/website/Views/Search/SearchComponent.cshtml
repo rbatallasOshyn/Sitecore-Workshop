@@ -1,0 +1,13 @@
+﻿@using Workshop.Feature.Search
+@using Workshop.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<div class="box form">
+    <h2>@Html.Sitecore().Field("Title", Model.Item)</h2>
+    <div class="form">
+        <label>@Html.Sitecore().Field("Label", Model.Item)</label>
+        <input type="text" />
+        <input type="submit" value="Submit" class="btn btn-primary btn-default" />
+    </div>
+</div>
