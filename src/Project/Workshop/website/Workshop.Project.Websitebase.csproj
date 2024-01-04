@@ -48,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\Styles.css" />
-    <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <Content Include="scripts\app.js" />
     <Content Include="Views\Layout\Default.cshtml" />
     <Content Include="App_Config\Include\Project\Project.Workshop.Serialization.config" />
