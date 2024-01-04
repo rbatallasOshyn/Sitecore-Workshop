@@ -66,12 +66,47 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Directory.build.props" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Package.pubxml" />
     <Content Include="Workshop.Website.wpp.targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Feature\Hero\website\Workshop.Feature.Hero.csproj">
+      <Project>{3c8cc778-bc6e-4978-a81c-bb7046432459}</Project>
+      <Name>Workshop.Feature.Hero</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Feature\Navigation\website\Workshop.Feature.Navigation.csproj">
+      <Project>{e5069542-3233-40dd-866e-71e4f1c25800}</Project>
+      <Name>Workshop.Feature.Navigation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Feature\PageContent\website\Workshop.Feature.PageContent.csproj">
+      <Project>{33376063-002e-4791-afd4-10bd8b37bf23}</Project>
+      <Name>Workshop.Feature.PageContent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Feature\Search\website\Workshop.Feature.Search.csproj">
+      <Project>{0a30862f-1e6e-4b5f-abb8-900a0e4ab748}</Project>
+      <Name>Workshop.Feature.Search</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\DependencyInjection\website\Workshop.Foundation.DependencyInjection.csproj">
+      <Project>{494feff8-dad2-4899-923a-bb1316b8211c}</Project>
+      <Name>Workshop.Foundation.DependencyInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\Serialization\website\Workshop.Foundation.Serialization.csproj">
+      <Project>{8835622d-13fd-438f-b3c9-877314d9a4bb}</Project>
+      <Name>Workshop.Foundation.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\SitecoreExtensions\website\Workshop.Foundation.SitecoreExtensions.csproj">
+      <Project>{155e2c77-e55b-4e79-9796-c8e4e56621b4}</Project>
+      <Name>Workshop.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Project\Workshop\website\Workshop.Project.Websitebase.csproj">
+      <Project>{bf181ec8-cb07-4f37-8cac-05afcfad5e46}</Project>
+      <Name>Workshop.Project.Websitebase</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
