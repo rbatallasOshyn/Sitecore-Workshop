@@ -1,0 +1,6 @@
+﻿@using Workshop.Feature.PageContent
+@using Workshop.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@Html.Sitecore().Field("Content", Model.Item)

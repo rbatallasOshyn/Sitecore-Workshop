@@ -55,6 +55,8 @@
     <Content Include="App_Config\Include\Feature\Feature.PageContent.Serialization.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Package.pubxml" />
+    <Content Include="Views\PageContent\GenericRichText.cshtml" />
+    <Content Include="Views\PageContent\PageBodyText.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,8 @@
+﻿@using Workshop.Feature.PageContent
+@using Workshop.Foundation.SitecoreExtensions.Extensions
+
+@{ 
+    var currentItem = Sitecore.Context.Item;
+}
+
+@Html.Sitecore().Field("Body", currentItem)
