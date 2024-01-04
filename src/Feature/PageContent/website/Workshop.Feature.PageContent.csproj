@@ -48,7 +48,6 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <Content Include="Views\Header\Header.cshtml" />
     <Content Include="Views\Footer\Footer.cshtml" />
     <Content Include="Views\Sublayouts\TwoColumns.cshtml" />

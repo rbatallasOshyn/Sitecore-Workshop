@@ -26,6 +26,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configura
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		NuGet.config = NuGet.config
+		publishsettings.targets = publishsettings.targets
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workshop", "Workshop", "{8CFDA3C6-6801-4A06-AE94-3191D1620044}"

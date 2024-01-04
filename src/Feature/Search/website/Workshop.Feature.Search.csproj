@@ -56,7 +56,6 @@
     <None Include="Properties\PublishProfiles\Package.pubxml" />
     <Content Include="Views\Search\SearchComponent.cshtml" />
     <None Include="Web.config" />
-    <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
