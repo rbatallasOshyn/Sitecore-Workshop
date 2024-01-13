@@ -1,0 +1,21 @@
+﻿---
+ID: "9348470b-e6b5-4b76-9f8b-98bf48310458"
+Parent: "1766af60-4402-439e-8115-74a7e651b286"
+Template: "1766af60-4402-439e-8115-74a7e651b286"
+Path: /sitecore/templates/Feature/Doctors/Specialty/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240113T023734Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "aa74ffd3-9cf4-478c-80d1-c162abb0f090"
+      Hint: Name
+      Value: $name

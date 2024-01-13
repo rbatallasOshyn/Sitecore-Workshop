@@ -1,0 +1,27 @@
+﻿@using Workshop.Foundation.SitecoreExtensions.Extensions
+
+@{ 
+    var currentItem = Sitecore.Context.Item;
+    string specialtyName = "";
+    var specialty = currentItem.GetSelectedItemFromDroplistField(Workshop.Feature.Doctors.Templates.Doctor.Fields.Specialty);
+    if (specialty != null)
+    {
+        specialtyName = specialty.Fields[Workshop.Feature.Doctors.Templates.Specialty.Fields.Name].Value;
+    }
+}
+
+
+
+<div class="g-g">
+    <div class="g-u-1-5">
+        @Html.Sitecore().Field("Photo", currentItem)
+    </div>
+    <div class="g-u-4-5">
+        <h1 class="doctor-name">@Html.Sitecore().Field("Name", currentItem)</h1>
+        <span class="doctor-position">@specialtyName</span>
+        @Html.Sitecore().Field("Opening hours", currentItem)
+
+        @Html.Sitecore().Field("CTA", currentItem, new { @class="btn red bold big"})
+        
+    </div>
+</div>

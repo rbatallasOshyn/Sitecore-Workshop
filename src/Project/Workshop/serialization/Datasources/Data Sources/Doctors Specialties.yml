@@ -1,0 +1,14 @@
+﻿---
+ID: "6a953c56-5dfd-493f-a78e-d78b6d36b305"
+Parent: "5cb1ac57-70f0-4b07-b937-514fc1382574"
+Template: "d9173dda-0a4d-4dcb-88bd-d2ba88dd3981"
+Path: /sitecore/content/Data Sources/Doctors Specialties
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240113T023537Z

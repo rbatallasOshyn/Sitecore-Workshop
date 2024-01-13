@@ -1,0 +1,31 @@
+﻿@using Workshop.Feature.Doctors.Models
+
+@model List<DoctorListItemModel>
+
+@if(Model == null)
+{
+    return;
+}
+
+<h1>Doctors</h1>
+<ul class="doctors">
+    @foreach (var item in Model)
+    {
+        <li>
+            <div class="g-g">
+                <div class="g-u-1-6">
+                    <img alt="Doctor" src="@item.PhotoUrl" />
+                </div>
+                <div class="g-u-5-6">
+                    <a href="@item.ItemUrl">
+                        <h3>@item.DoctorName</h3>
+                    </a>
+                    <p>@item.Specialty</p>
+                </div>
+            </div>
+        </li>
+    }
+
+
+
+</ul>

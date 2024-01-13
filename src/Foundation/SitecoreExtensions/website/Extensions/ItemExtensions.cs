@@ -159,6 +159,30 @@ namespace Workshop.Foundation.SitecoreExtensions.Extensions
             }
         }
 
+        public static Item GetSelectedItemFromDroplinkField(this Item item, ID fieldId)
+        {
+            ReferenceField field = item.Fields[fieldId];
+            if (field == null || field.TargetItem == null)
+            {
+                return null;
+            }
+
+            return field.TargetItem;
+        }
+
+        public static Item GetSelectedItemFromDroplistField(this Item item, ID fieldId)
+        {
+            Field field = item.Fields[fieldId];
+            if (field == null || string.IsNullOrEmpty(field.Value))
+            {
+                return null;
+            }
+
+            var fieldSource = field.Source ?? string.Empty;
+            var selectedItemPath = fieldSource.TrimEnd('/') + "/" + field.Value;
+            return item.Database.GetItem(selectedItemPath);
+        }
+
         public static bool HasLayout(this Item item)
         {
             return item?.Visualization?.Layout != null;

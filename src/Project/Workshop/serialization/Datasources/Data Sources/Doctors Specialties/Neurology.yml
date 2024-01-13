@@ -1,0 +1,17 @@
+﻿---
+ID: "589c6520-754d-4e53-ad56-8406ff76405e"
+Parent: "6a953c56-5dfd-493f-a78e-d78b6d36b305"
+Template: "1766af60-4402-439e-8115-74a7e651b286"
+Path: /sitecore/content/Data Sources/Doctors Specialties/Neurology
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240113T024536Z
+    - ID: "aa74ffd3-9cf4-478c-80d1-c162abb0f090"
+      Hint: Name
+      Value: Neurology

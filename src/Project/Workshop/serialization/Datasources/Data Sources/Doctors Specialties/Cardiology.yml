@@ -1,0 +1,17 @@
+﻿---
+ID: "55a11597-376a-4b35-b786-27ec44c6cabf"
+Parent: "6a953c56-5dfd-493f-a78e-d78b6d36b305"
+Template: "1766af60-4402-439e-8115-74a7e651b286"
+Path: /sitecore/content/Data Sources/Doctors Specialties/Cardiology
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240113T024557Z
+    - ID: "aa74ffd3-9cf4-478c-80d1-c162abb0f090"
+      Hint: Name
+      Value: Cardiology

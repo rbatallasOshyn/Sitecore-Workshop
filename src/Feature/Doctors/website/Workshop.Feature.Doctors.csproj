@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{33376063-002E-4791-AFD4-10BD8B37BF23}</ProjectGuid>
+    <ProjectGuid>{4CF3E8CC-1F04-4139-9C5D-12444FEC2698}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Workshop.Feature.PageContent</RootNamespace>
-    <AssemblyName>Workshop.Feature.PageContent</AssemblyName>
+    <RootNamespace>Workshop.Feature.Doctors</RootNamespace>
+    <AssemblyName>Workshop.Feature.Doctors</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -44,28 +44,44 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Controllers\DoctorsController.cs" />
+    <Compile Include="Models\DoctorListItemModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DoctorListRepository.cs" />
+    <Compile Include="Repositories\IDoctorListRepository.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Header\Header.cshtml" />
-    <Content Include="Views\Footer\Footer.cshtml" />
-    <Content Include="Views\Sublayouts\TwoColumns.cshtml" />
-    <Content Include="App_Config\Include\Feature\Feature.PageContent.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Doctors.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Doctors.Serialization.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Package.pubxml" />
-    <Content Include="Views\PageContent\GenericRichText.cshtml" />
-    <Content Include="Views\PageContent\PageBodyText.cshtml" />
-    <Content Include="Views\Sublayouts\OneColumn.cshtml" />
+    <Content Include="Views\Doctors\DoctorList.cshtml" />
+    <Content Include="Views\Doctors\DoctorDetails.cshtml" />
     <None Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Views\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc">
+      <IncludeAssets>Compile</IncludeAssets>
+      <Version>5.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.Razor">
+      <IncludeAssets>Compile</IncludeAssets>
+      <Version>3.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.WebPages">
+      <IncludeAssets>Compile</IncludeAssets>
+      <Version>3.2.4</Version>
+    </PackageReference>
     <PackageReference Include="Sitecore.Kernel">
       <IncludeAssets>Compile</IncludeAssets>
       <Version>10.3.0</Version>
@@ -76,16 +92,16 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Web" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\website\Workshop.Foundation.SitecoreExtensions.csproj">
       <Project>{155e2c77-e55b-4e79-9796-c8e4e56621b4}</Project>
       <Name>Workshop.Foundation.SitecoreExtensions</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -103,9 +119,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58440</DevelopmentServerPort>
+          <DevelopmentServerPort>62434</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58440/</IISUrl>
+          <IISUrl>http://localhost:62434/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

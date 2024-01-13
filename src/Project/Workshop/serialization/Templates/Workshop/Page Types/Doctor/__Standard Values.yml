@@ -1,14 +1,14 @@
 ﻿---
-ID: "bf942a49-60d8-415f-b8d2-483603099d7d"
-Parent: "b6398c31-b952-45b8-a0fd-6ef73ea86218"
-Template: "b6398c31-b952-45b8-a0fd-6ef73ea86218"
-Path: /sitecore/templates/Project/Workshop/Page Types/Site Page/__Standard Values
+ID: "91300a2e-6159-4cd4-9a29-3cfe969ed40a"
+Parent: "d8f6e045-b2e7-45d5-9858-fd7109117913"
+Template: "d8f6e045-b2e7-45d5-9858-fd7109117913"
+Path: /sitecore/templates/Project/Workshop/Page Types/Doctor/__Standard Values
 DB: master
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Type: TreelistEx
-  Value: "{D8F6E045-B2E7-45D5-9858-FD7109117913}"
+  Value: 
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -22,22 +22,29 @@ SharedFields:
           id="{DA90AEF9-E5A1-4E56-8C98-2BD96997C6DD}"
           par=""
           ph="header"
-          uid="{1A7972B6-0E10-4F68-B57C-5CCB4260676E}"
+          uid="{98EC0F08-34D1-4DE5-BB04-DC4A6446F31B}"
           ccb="Clear on publish" />
         <r
           id="{59034D87-DC57-44AE-B188-8F5987ABED08}"
           ph="navigation"
-          uid="{77646EAF-6CC9-4859-BD4A-74F8FBC33B46}" />
+          uid="{CB7C63A0-C866-433D-BA8A-EBC36C468D1D}" />
         <r
-          id="{BC77750C-4D6F-4316-9D57-3F8310259526}"
+          id="{15767219-BB3F-43FE-9419-45D33CDB41C3}"
           ph="main"
-          uid="{9D26AB12-64E5-42FA-B90B-1EDE794F8A27}" />
+          uid="{C1903890-19F6-4A6B-8358-C05AA27C0F5B}" />
+        <r
+          ds=""
+          id="{A9E66817-27A8-459D-ABCE-D7B59BEA089E}"
+          par=""
+          ph="/main/col-1"
+          uid="{CECA7F67-D816-49FA-96CD-DFB6F8F3FDE8}"
+          ccb="Clear on publish" />
         <r
           ds="{35ECC186-62E7-4BE1-8023-7DC6892A8724}"
           id="{01ADFBCE-7C10-455C-BD30-5CA066074169}"
           par=""
           ph="footer"
-          uid="{C1EFFD4B-751A-41CB-9543-84B63C6901FD}"
+          uid="{07DC0804-BE6B-4F1D-A67A-050E00259277}"
           ccb="Clear on publish" />
       </d>
     </r>
@@ -48,7 +55,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240101T220945Z
+      Value: 20240113T022858Z
     - ID: "2aa86b7b-4f30-41dc-b7d3-405ee4303ea8"
       Hint: Title
       Value: $name
@@ -56,3 +63,6 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "91bf8efe-4fe5-47f7-adde-b970078f7d51"
+      Hint: Name
+      Value: $name
