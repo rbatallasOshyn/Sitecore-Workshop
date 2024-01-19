@@ -1,0 +1,15 @@
+﻿
+@using Workshop.Feature.PageContent.Models
+
+@model List<LinkModel>
+
+<div class="treeMenu">
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="@item.Url">@item.Name</a>
+            </li>
+        }
+    </ul>
+</div>

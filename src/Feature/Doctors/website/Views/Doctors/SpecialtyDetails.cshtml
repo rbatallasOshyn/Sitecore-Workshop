@@ -1,0 +1,11 @@
+﻿
+@using Workshop.Feature.Doctors.Models
+
+@model SpecialtyModel
+
+@if(Model == null)
+{
+    return;
+}
+
+@Html.Raw(Model.Content)

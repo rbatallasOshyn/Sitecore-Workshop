@@ -6,5 +6,7 @@ namespace Workshop.Feature.Doctors.Repositories
     public interface IDoctorListRepository
     {
         List<DoctorListItemModel> GetDoctorList();
+
+        SpecialtyModel SpecialtyDetails();
     }
 }

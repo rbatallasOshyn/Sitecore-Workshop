@@ -17,5 +17,11 @@ namespace Workshop.Feature.Doctors.Controllers
             var model = _doctorListRepository.GetDoctorList();
             return View(Constants.Views.DoctorList, model);
         }
+
+        public ActionResult SpecialtyDetails()
+        {
+            var model = _doctorListRepository.SpecialtyDetails();
+            return View(Constants.Views.SpecialtyDetails, model);
+        }
     }
 }

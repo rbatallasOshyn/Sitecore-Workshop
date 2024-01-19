@@ -1,0 +1,25 @@
+﻿---
+ID: "1e7788d7-e845-4ba7-9b3d-eeeb82b3bf8b"
+Parent: "4d04b815-c706-45b4-937b-2cd26e063542"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/Page Content/ChildLinks
+DB: master
+SharedFields:
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: GetChildLinks
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Workshop.Feature.PageContent.Controllers.PageContentController, Workshop.Feature.PageContent
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240119T040818Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

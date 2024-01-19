@@ -29,6 +29,7 @@ namespace Workshop.Feature.Doctors
             public struct Fields
             {
                 public static ID Name = new ID("{AA74FFD3-9CF4-478C-80D1-C162ABB0F090}");
+                public static ID Description = new ID("{C99A7919-9F5C-491B-84BB-C25A6E237727}");
             }
         }
     }

@@ -1,8 +1,6 @@
 ﻿using Sitecore.Data.Items;
-using System;
+using Sitecore.Mvc.Presentation;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using Workshop.Feature.Doctors.Models;
 using Workshop.Foundation.SitecoreExtensions.Extensions;
 
@@ -35,6 +33,20 @@ namespace Workshop.Feature.Doctors.Repositories
                 model.Add(doctorItem);
             }
 
+
+            return model;
+        }
+
+        public SpecialtyModel SpecialtyDetails()
+        {
+            var model = new SpecialtyModel();
+
+            var renderingModel = (RenderingModel)RenderingContext.Current.Rendering.Model;
+
+            var renderingItem = renderingModel.Item;
+
+            model.Title = renderingItem.Fields[Templates.Specialty.Fields.Name].Value;
+            model.Content = renderingItem.Fields[Templates.Specialty.Fields.Description].Value;
 
             return model;
         }

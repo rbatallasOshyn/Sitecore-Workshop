@@ -44,7 +44,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Controllers\PageContentController.cs" />
+    <Compile Include="Models\LinkModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IPageContentRepository.cs" />
+    <Compile Include="Repositories\PageContentRepository.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,17 +57,17 @@
     <Content Include="Views\Footer\Footer.cshtml" />
     <Content Include="Views\Sublayouts\TwoColumns.cshtml" />
     <Content Include="App_Config\Include\Feature\Feature.PageContent.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.PageContent.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Package.pubxml" />
     <Content Include="Views\PageContent\GenericRichText.cshtml" />
     <Content Include="Views\PageContent\PageBodyText.cshtml" />
     <Content Include="Views\Sublayouts\OneColumn.cshtml" />
     <Content Include="Views\Sublayouts\ShortTwoColumns.cshtml" />
+    <Content Include="Views\PageContent\ChildLinks.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Views\Web.config" />
   </ItemGroup>
