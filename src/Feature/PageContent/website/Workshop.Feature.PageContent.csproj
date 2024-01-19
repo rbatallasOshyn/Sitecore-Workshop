@@ -57,6 +57,7 @@
     <Content Include="Views\PageContent\GenericRichText.cshtml" />
     <Content Include="Views\PageContent\PageBodyText.cshtml" />
     <Content Include="Views\Sublayouts\OneColumn.cshtml" />
+    <Content Include="Views\Sublayouts\ShortTwoColumns.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
