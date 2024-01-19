@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4CF3E8CC-1F04-4139-9C5D-12444FEC2698}</ProjectGuid>
+    <ProjectGuid>{F525AFF0-4D45-4AB3-8E8C-3E7E87DE2EC5}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Workshop.Feature.Doctors</RootNamespace>
-    <AssemblyName>Workshop.Feature.Doctors</AssemblyName>
+    <RootNamespace>Workshop.Feature.Forms</RootNamespace>
+    <AssemblyName>Workshop.Feature.Forms</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -45,37 +45,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
-    <Compile Include="Controllers\DoctorsController.cs" />
-    <Compile Include="Models\DoctorListItemModel.cs" />
+    <Compile Include="Controllers\FormsController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\DoctorListRepository.cs" />
-    <Compile Include="Repositories\IDoctorListRepository.cs" />
-    <Compile Include="Templates.cs" />
+    <Compile Include="Repositories\FormsRepository.cs" />
+    <Compile Include="Repositories\IFormsRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Feature.Doctors.config" />
-    <Content Include="App_Config\Include\Feature\Feature.Doctors.Serialization.config" />
+    <Content Include="Views\Forms\ContactUs.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature.Forms.Serialization.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Package.pubxml" />
-    <Content Include="Views\Doctors\DoctorList.cshtml" />
-    <Content Include="Views\Doctors\DoctorDetails.cshtml" />
     <None Include="Web.config" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.Mvc">
-      <IncludeAssets>Compile</IncludeAssets>
-      <Version>5.2.4</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.AspNet.Razor">
-      <IncludeAssets>Compile</IncludeAssets>
-      <Version>3.2.4</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.AspNet.WebPages">
-      <IncludeAssets>Compile</IncludeAssets>
-      <Version>3.2.4</Version>
-    </PackageReference>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Sitecore.Kernel">
       <IncludeAssets>Compile</IncludeAssets>
       <Version>10.3.0</Version>
@@ -84,18 +70,6 @@
       <IncludeAssets>Compile</IncludeAssets>
       <Version>10.3.0</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\website\Workshop.Foundation.SitecoreExtensions.csproj">
-      <Project>{155e2c77-e55b-4e79-9796-c8e4e56621b4}</Project>
-      <Name>Workshop.Foundation.SitecoreExtensions</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Web" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -113,9 +87,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>62434</DevelopmentServerPort>
+          <DevelopmentServerPort>51305</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:62434/</IISUrl>
+          <IISUrl>http://localhost:51305/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -130,10 +104,4 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
   </Target>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target> -->
 </Project>

@@ -1,17 +1,13 @@
 ﻿---
-ID: "a9e66817-27a8-459d-abce-d7b59bea089e"
-Parent: "71ca646e-9bc3-4cac-98e6-a643f97cb76d"
+ID: "8eec5144-641f-425d-830d-f9e42cd1e565"
+Parent: "eafd7d85-1682-405e-8335-b700ef4af716"
 Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
-Path: /sitecore/layout/Renderings/Feature/Doctors/Doctor Details
+Path: /sitecore/layout/Renderings/Feature/Forms/ContactUs
 DB: master
 SharedFields:
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
-  Value: ~/Views/Doctors/DoctorDetails.cshtml
-- ID: "a2f5d9df-8cba-4a1d-99eb-51acb94cb057"
-  Hint: Page Editor Buttons
-  Type: Treelist
-  Value: "{94AED54E-AA23-4C9E-A58B-49B188DB935E}"
+  Value: ~/Views/Forms/ContactUs.cshtml
 Languages:
 - Language: en
   Versions:
@@ -19,7 +15,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240113T044240Z
+      Value: 20240119T032407Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
